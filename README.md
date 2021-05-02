@@ -12,5 +12,8 @@ https://docs.google.com/document/d/1RHiD-JRQgDEOIpmPDRdqSDiWjOps38AQ3JXzzwygeRs/
 ## Heart Health Predictor
 https://docs.google.com/document/d/1LdEqiQffM2Akf4t2b9ca7TWRykmG8lyiE9mMYNpAnh4/edit?usp=sharing
 
+## Parkinson's Detection Model Dataset Collection
+https://docs.google.com/document/d/1pEGe8wvcg16Tk6K3j57dvSP8vaw_3SsWNRVfESlolw0/edit?usp=sharing
+
 ## Anxiety
 https://docs.google.com/document/d/1ej1dDbVPstLf3UW5xLMwtTzorciAVTS5pEzGwi4R2vk/edit
