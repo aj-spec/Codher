@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+    font-size: 60px;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    font-size: 40px;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+    font-size: 30px;
+  }
+  .container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+.submit_blocks{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:#f44336;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+}
+  </style>
+  <script type="text/javascript">
+  function result(){
+    var sum=0;
+    sum+=Number(document.getElementById('q1').value);
+    sum+=Number(document.getElementById('q2').value);
+    sum+=Number(document.getElementById('q3').value);
+    sum+=Number(document.getElementById('q4').value);
+    sum+=Number(document.getElementById('q5').value);
+    sum+=Number(document.getElementById('q6').value);
+    sum+=Number(document.getElementById('q7').value);
+    sum+=Number(document.getElementById('q8').value);
+    if(sum<8){
+          alert("Mild Anxiety");
+    }
+    else if(sum<16){
+          alert("Moderate Anxiety");
+    }
+    else{
+          alert("Severe Anxiety");
+    }
+
+  }
+</script>
+  <title>Mental Health Predictor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+    <h3><font size="30px">Who Am I?</font></h3>
+    <img src="alzhimer_ribbon.jpg" class="img-circle" alt="Bird" width="100" height="300">
+    <h3><font size="30px">I am the mental health predictor</font></h3>
+  </div>
+
+  <div class="container-fluid bg-2 text-center">
+  <h3><font size="30px">What Am I?</font></h3>
+  <p>I take data entered by the user in the form a questionnaire and predict if the person is suffering from anxiety o not.</p>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3><font size="30px">Where To Find Me?</font></h3>
+  <p>Charu Anant Rajput - charu18.anant@gmail.com</p>
+  <p>Sanjana Godiawala - ssanjana1901@gmail.com</p>
+  <p>Ayushi Jain - ayushij1604@gmail.com</p>
+</div>
+
+<div class = "container-fluid bg-2 text-center">Teachable Machine Model</div>
+<div class="container">
+           <form name = "question">
+  <div>
+    <p>1. Feeling nervous, anxious, or on edge</p>
+    <p><input type="radio" name=q1 id="q1" value="1"> Mild</p>
+    <p><input type="radio" name=q1 id="q1" value="2"> Moderate</p>
+    <p><input type="radio" name=q1 id="q1" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>2. Worrying too much about different things</p>
+    <p><input type="radio" name=q2 id="q2" value="1"> Mild</p>
+    <p><input type="radio" name=q2 id="q2" value="2"> Moderate</p>
+    <p><input type="radio" name=q2 id="q2" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>3. Trouble relaxing and sleeping</p>
+    <p><input type="radio" name=q3 id="q3" value="1"> Mild</p>
+    <p><input type="radio" name=q3 id="q3" value="2"> Moderate</p>
+    <p><input type="radio" name=q3 id="q3" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>4. Being so restless that it is hard to sit still</p>
+    <p><input type="radio" name=q4 id="q4" value="1"> Mild</p>
+    <p><input type="radio" name=q4 id="q4" value="2"> Moderate</p>
+    <p><input type="radio" name=q4 id="q4" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>5. Feeling afraid, as if something awful might happen</p>
+    <p><input type="radio" name=q5 id="q5" value="1"> Mild</p>
+    <p><input type="radio" name=q5 id="q5" value="2"> Moderate</p>
+    <p><input type="radio" name=q5 id="q5" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>6. Becoming easily annoyed or irritable </p>
+    <p><input type="radio" name=q6 id="q6" value="1"> Mild</p>
+    <p><input type="radio" name=q6 id="q6" value="2"> Moderate</p>
+    <p><input type="radio" name=q6 id="q6" value="3"> Severe</p>
+  </div>
+   <div>
+    <p>7. Feeling dizziness or fainting</p>
+    <p><input type="radio" name=q7 id="q7" value="1"> Mild</p>
+    <p><input type="radio" name=q7 id="q7" value="2"> Moderate</p>
+    <p><input type="radio" name=q7 id="q7" value="3"> Severe</p>
+  </div> <div>
+    <p>8. Encountered any kind of trauma/crisis</p>
+    <p><input type="radio" name=q8 id="q8" value="1"> Mild</p>
+    <p><input type="radio" name=q8 id="q8" value="2"> Moderate</p>
+    <p><input type="radio" name=q8 id="q8" value="3"> Severe</p>
+  </div>
+</form>
+<center><button type="button" class="block" onclick="result()">Start Prediction</button></center>
+
+<center><div id="webcam-container"></div></center>
+<center><div id="label-container"></div></center>
+
+</body>
+</html>

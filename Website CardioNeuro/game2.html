@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#start").click(function(){
+				$("td").fadeIn();
+			    $("#img").show();
+  			});
+		});
+
+
+		
+		$(document).ready(function(){
+			$("#submit").click(function(){
+
+				$("#original").show();
+			    $("#game").show();
+  			});
+		});
+
+		function ChangeColor(obj)   {  
+	     	if(document.getElementById(obj.id).style.background=="white"){
+	        	  document.getElementById(obj.id).style.background="red";  
+	     	}
+	     	else{
+	     		  document.getElementById(obj.id).style.background="white";  
+	     	}
+	    }
+
+	    function getResult(){
+	    	if(document.getElementById("bt2").style.background=="red" && document.getElementById("bt3").style.background=="red" && document.getElementById("bt6").style.background=="red" && document.getElementById("bt15").style.background=="red" && document.getElementById("bt1").style.background=="white" && document.getElementById("bt4").style.background=="white" && document.getElementById("bt5").style.background=="white" && document.getElementById("bt7").style.background=="white" && document.getElementById("bt8").style.background=="white" && document.getElementById("bt9").style.background=="white"  && document.getElementById("bt10").style.background=="white"  && document.getElementById("bt11").style.background=="white"  && document.getElementById("bt12").style.background=="white"  && document.getElementById("bt13").style.background=="white"  && document.getElementById("bt14").style.background=="white"  && document.getElementById("bt16").style.background=="white"  ){
+	        	 alert("Correct!");  
+	     	}
+	     	else{
+	     		alert("Try Again!");
+	     	}
+	    }
+
+	</script>
+</head>
+
+
+
+<body style="background-color:black;">
+    <h2 style="color:white;">This is a memory game, you would be shown a gird with fruits placed in different cells for 30 seconds, and then you would be required to highlight a specific fruit on the grid again. For this you need to click on the cells where the fruit was present initailly.Once you think you have highlighted all the cells containing that fruit you can click on submit.</h2>
+    <table align="center" id="initial" border="block white 2px" cellpadding="5px" cellspacing="5px">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<table align="center" id="board" border="block white 2px" cellpadding="5px" cellspacing="5px" style="display: none; width: 450px; height: 475px;">
+		<tr>
+			<td><img src="banana.jpg.png" style="width: 90px;" /></td>
+			<td><img src="apple.jpg.png" style="width: 90px;"/></td>
+			<td><img src="apple.jpg.png" style="width: 90px;"/></td>
+			<td><img src="banana.jpg.png" style="width: 90px;"/></td>
+		</tr>
+		<tr>
+			<td><img src="grapes.jpg.png" style="width: 90px;"/></td>
+			<td><img src="apple.jpg.png" style="width: 90px;"/></td>
+			<td><img src="banana.jpg.png" style="width: 90px;"/></td>
+			<td><img src="strawberry.jpg.png" style="width: 90px;"/></td>
+		</tr>
+		<tr>
+			<td><img src="cherry.jpg.png" style="width: 90px;"/></td>
+			<td><img src="cherry.jpg.png" style="width: 90px;"/></td>
+			<td><img src="gapple.jpg.png" style="width: 90px;"/></td>
+			<td><img src="orange.jpg.png" style="width: 90px;"/></td>
+		</tr>
+		<tr>
+			<td><img src="banana.jpg.png" style="width: 90px;"/></td>
+			<td><img src="cherry.jpg.png" style="width: 90px;"/></td>
+			<td><img src="apple.jpg.png" style="width: 90px;"/></td>
+			<td><img src="banana.jpg.png" style="width: 90px;"/></td>
+		</tr>
+	</table>
+    		<h2 id="ques" style="display: none; color:white;"> Click the cells where apples were placed</h2>
+    		<center>
+	<div id="result" style="background-color: black; width: 520px; height: 520px;display: none;" align="center" ><br>
+		<button id="bt1" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt2" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt3" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt4" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button><br>
+		<button id="bt5" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt6" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt7" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt8" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button><br>
+		<button id="bt9" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt10" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt11" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt12" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button><br>
+		<button id="bt13" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt14" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt15" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button>
+		<button id="bt16" type="button" class="grid" style="background : white; width: 100px; height: 100px; margin: 10px" onclick="ChangeColor(this)"></button><br>
+	</div></center>
+
+	<br><center><button id="start" type="button" style="padding: 10px; " onclick="getElementById('board').style.display='block';getElementById('initial').style.display='none'; setTimeout(function () {document.getElementById('board').style.display='none';document.getElementById('result').style.display='block';document.getElementById('start').style.display='none';document.getElementById('submit').style.display='block';document.getElementById('ques').style.display='block';}, 10000); return false">Start</button></center>
+     
+     <center><button type="button" id='submit' style="padding: 10px; margin: 10px;display: none;" onclick="getResult()"> Submit </button></center>
+
+	
+</body>
+<style type="text/css">
+	td{
+		width: 100px; 
+		height: 100px;
+	}
+</style>
