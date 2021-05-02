@@ -1,6 +1,6 @@
 # Codher
 
-## Game Doc
+## Game
 https://docs.google.com/document/d/1h9w8sewaql3ueEYQpPnLfNZyXGsk06G43KyaqyJX-ws/edit?usp=sharing
 
 ## Heart Health Predictor
